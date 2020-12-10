@@ -11,7 +11,6 @@ class New extends React.Component {
                 Description: <input type="text" name="description" /><br/>
                 Image: <input type="text" name="image" /><br/>
                 Link: <input type="text" name="link" /><br/>
-                {/* Publish publicly: <input type="checkbox" name="publish" /><br/> */}
                 <input type="submit" name="" value="Submit Project"/>
              </form>
         </div>);

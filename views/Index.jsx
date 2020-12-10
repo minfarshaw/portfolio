@@ -9,7 +9,9 @@ class Index extends React.Component{
             >
                 <div class="header-container">
                     <h1>My Latest Projects</h1>
+                    <br />
                     <h2>These are some of the web projects I have made using HTML, CSS, Javascript and PHP.</h2>
+                    <br />
                     <p>Click on the images below to learn more about each project and get a link to see it in action!</p>
                 </div>
                 <ul>

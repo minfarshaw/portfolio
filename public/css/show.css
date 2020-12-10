@@ -1,6 +1,7 @@
 *{
     font-family: Lato;
-  
+    margin: 0;
+    padding: 0;
   }
 
 .topnav {
@@ -56,4 +57,23 @@ h1 {
 
 p {
     font-size: 1.5rem;
+}
+
+.about-content {
+    margin: 50px 200px 50px 200px;
+}
+
+.contact-form {
+  padding: 20px;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+#submit-button {
+  font-size: 1rem;
+}
+
+.inputs {
+  padding: 10px;
+  margin: 10px;
 }

@@ -57,7 +57,7 @@ app.get('/', (req, res)=> {
 app.get('/about', (req, res)=> {
   res.render('static/About')
 })
-app.get('/contact-us', (req, res)=> {
+app.get('/contact', (req, res)=> {
   res.render('static/ContactUs')
 })
 

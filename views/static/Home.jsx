@@ -6,16 +6,27 @@ class Home extends React.Component {
     return (   
       <Layout
             stylesheet="/css/main.css">
-              
               <div class="header-container">
                 <div id="header-image">
                   <img src="./assets/images/header7.jpg" alt=""/>
                   
               </div>
             </div>
-              <div class="section-header">
-                <h2>Featured Projects</h2>
-                </div>
+            <div id="greeting">
+              <h1>greeting.hello</h1>
+                <p>My name is Amanda Hayes and I’m a web developer with a passion for design, writing and media.
+                  <br />
+                  I design and develop websites for small and large businesses alike.
+                  <br />
+                  I’m currently a manager of digital communications for a local news organization 
+                  <br />
+                  and I am excited to use my knowledge and skills on a larger scale.
+                </p>
+              </div>
+                <div class="section-header">
+                  <h2>Featured Projects</h2>
+                  <p>Click on one of the images below to learn more about the project and see it in action!</p>
+                  </div>
 
                 <section class="masonry">
 
