@@ -60,7 +60,7 @@ app.get('/about', (req, res)=> {
 app.get('/contact', (req, res)=> {
   res.render('static/ContactUs')
 })
-app.get('/project', (req, res) => {
+app.get('/index.jsx', (req, res) => {
   res.render('static/project')
 })
 
