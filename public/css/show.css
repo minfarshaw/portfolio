@@ -1,0 +1,59 @@
+*{
+    font-family: Lato;
+  
+  }
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .topnav a:hover {
+    background-color: #02aed6;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #333;
+    color: white;
+  }
+
+
+img {
+    max-width: 400px;
+    border-radius: 2px;
+}
+
+.header-container {
+    background-color: #02aed6;
+    padding: 40px;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: Lato;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+#projectDetails {
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+}

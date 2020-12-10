@@ -3,17 +3,20 @@ const Layout = require('./Layouts/Layout.jsx');
 
 class Show extends React.Component {
     render(){
+        const project = this.props.project;
         return (
             <Layout
-             title={`${this.props.project.name.toUpperCase()} Show Page`}
-             stylesheet="/css/main.css"
+             stylesheet="/css/show.css"
             >
+                <div class="header-container">Project: {`${project.name.toUpperCase()}`}</div>
                 <div id="projectDetails">
-                <img src={ project.image }/>
+                <a href={project.link} target="_blank"><img src={ project.image }/></a>
+                
                 <br />
-                <p>{this.props.project.name} was a very clever project by yours truly.</p>
-                <a href={'/project'}>Go Back Home</a><br/>
-                <a href={'/project/new'}>Create a New Project</a><br/>
+                <p>{project.name} is {project.description}</p>
+                <a href={project.link} target="_blank">Learn more by clicking here!</a>
+                <br />
+                <a href={`/project/${project._id}/edit`}>Edit This Project</a>
                 </div>
             </Layout>
         )

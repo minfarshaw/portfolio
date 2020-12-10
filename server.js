@@ -12,8 +12,6 @@ const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
-const show = console.log;
-show('im cool')
 
 /* --------------------------------------------------------------------------------------*/
 /* PORT */
@@ -117,13 +115,13 @@ app.put('/project/:id', (req, res) => {
 /* --------------------------------------------------------------------------------------*/
 /* CREATE */
 /*---------------------------------------------------------------------------------------*/ 
-app.post('/project', (req, res) => {
+app.post('/project/:id', (req, res) => {
   Project.create(req.body, (err, createdProject) => {
-    if(!err){
-      res.redirect('/project')
-    } else {
-      res.send(err);
-    }
+      if(!err){
+          res.redirect('/project/')
+      } else {
+          res.send(err);
+      }
   })
 })
 
@@ -131,6 +129,17 @@ app.post('/project', (req, res) => {
 /* --------------------------------------------------------------------------------------*/
 /* EDIT */
 /*---------------------------------------------------------------------------------------*/ 
+app.get('/project/:id/edit', (req, res) => {
+  Project.findById(req.params.id, (err, foundProject) => {
+      if(!err){
+          res.render('Edit', {
+              project: foundProject
+          })
+      } else {
+          res.send(err);
+      }
+  })
+})
 
 
 /* --------------------------------------------------------------------------------------*/
