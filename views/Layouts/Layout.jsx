@@ -15,7 +15,7 @@ class Layout extends React.Component {
                     <div class="topnav">
                         <a class="active" href="./">HOME</a>
                         <a href="/about">ABOUT</a>
-                        <a href="/Index.jsx">PROJECTS</a>
+                        <a href="/project">PROJECTS</a>
                         <a href="/contact">CONTACT</a>
                     </div>
                  </nav>

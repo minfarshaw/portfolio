@@ -60,9 +60,6 @@ app.get('/about', (req, res)=> {
 app.get('/contact', (req, res)=> {
   res.render('static/ContactUs')
 })
-app.get('/Index.jsx', (req, res) => {
-  res.render('static/project')
-})
 
 /* --------------------------------------------------------------------------------------*/
 /* INDEX */
